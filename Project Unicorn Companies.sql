@@ -26,12 +26,6 @@ ORDER by 2 desc
 -- Industri apa yang paling besar di antara unicorn company berdasarkan total fundingnya? 
 -- Berapa rata-rata valuasinya?
 
-SELECT * FROM unicorn_companies
-SELECT * FROM unicorn_dates
-SELECT * FROM unicorn_funding
-SELECT * FROM unicorn_industries
-
-
 SELECT ui.industry,
 		SUM(uf.funding) AS Total_funding,
 		ROUND(AVG(uf.valuation),0) AS avg_valuation
@@ -43,7 +37,6 @@ ORDER BY 2 DESC
 
 
 --  berapakah jumlah company yang bergabung sebagai unicorn di tiap tahunnya di rentang tahun 2016-2022?
-
 
 SELECT * FROM ( SELECT uc.company,
 		EXTRACT (YEAR FROM ud.date_joined) AS year_joined,
@@ -175,12 +168,6 @@ ORDER BY 3 DESC,2
 
 -- Amerika Serikat, China, dan India adalah tiga negara dengan jumlah unicorn paling banyak. 
 -- Apakah ada industri yang tidak memiliki unicorn yang berasal dari India? Apa saja?
-
-SELECT * FROM unicorn_companies
-SELECT * FROM unicorn_dates
-SELECT * FROM unicorn_funding
-SELECT * FROM unicorn_industries
-
 
 SELECT
 	DISTINCT ui.industry 
