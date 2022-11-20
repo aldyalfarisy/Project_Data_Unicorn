@@ -42,8 +42,7 @@ GROUP BY 1
 ORDER BY 2 DESC
 
 
--- untuk industri jawaban nomor 3 berapakah jumlah company yang 
--- bergabung sebagai unicorn di tiap tahunnya di rentang tahun 2016-2022?
+--  berapakah jumlah company yang bergabung sebagai unicorn di tiap tahunnya di rentang tahun 2016-2022?
 
 
 SELECT * FROM ( SELECT uc.company,
@@ -62,7 +61,7 @@ AND industry = 'Fintech'
 
 -- Tampilkan data detail company (nama company, kota asal, negara dan benua asal) 
 -- beserta industri dan valuasinya. Dari negara mana company dengan valuasi terbesar berasal dan apa industrinya?
---Bagaimana dengan Indonesia? Company apa yang memiliki valuasi paling besar di Indonesia?
+-- Bagaimana dengan Indonesia? Company apa yang memiliki valuasi paling besar di Indonesia?
 
 SELECT * FROM unicorn_companies
 SELECT * FROM unicorn_dates
